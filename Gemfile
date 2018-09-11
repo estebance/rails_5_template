@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.3.1"
+ruby "2.4.2"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -54,13 +54,8 @@ gem 'devise'
 # gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
 # gem 'erubis'
 # gem 'doorkeeper'
-
-
-# administration-gem
-gem 'activeadmin'
-
-# gems to generate API
-gem 'active_model_serializers'
+# env
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
